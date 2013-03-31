@@ -1,0 +1,96 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #000 url(../img/back.jpg) center top fixed no-repeat;
+	color: #fff;
+	font-family: serif;
+	text-shadow: 0 0 10px orange;
+}
+
+.container {
+	height: 100%;
+	width: 980px;
+}
+
+.navbar {
+	text-shadow: none;
+}
+
+.dropdown-menu li > a:hover {
+	background-color: #f90;
+	background-image: -moz-linear-gradient(top, #f90, #d70);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f90), to(#d70));
+	background-image: -webkit-linear-gradient(top, #f90, #d70);
+	background-image: -o-linear-gradient(top, #f90, #d70);
+	background-image: linear-gradient(to bottom, #f90, #d70);
+	background-repeat: repeat-x;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffff9900', endColorstr='#ffdd7700', GradientType=0);
+}
+
+.box {
+	height: 100%;
+	min-height: 800px;
+	line-height: 2em;
+	background-color: rgba(0,0,0,0.7);
+	margin-top: 50px;
+	padding: 1em;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.box h2 {
+	font-size: x-large;
+}
+
+.box a {
+	color: #99f;
+}
+
+.box a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+#top {
+	height: 100%;
+	min-height: 800px;
+}
+
+#topNav li {
+	list-style-type: none;
+}
+
+#topNav li a {
+	color: #fff;
+	font-size: xx-large;
+	line-height: 3em;
+}
+
+#social {
+	margin: 4em 2em;
+}
+
+#goTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#goTop a {
+	background: rgba(0,0,0,0.7);
+	text-decoration: none;
+	color: #fff;
+	width: 150px;
+	padding: 1em;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+#goTop a:hover {
+	text-decoration: none;
+	background: #000;
+}
