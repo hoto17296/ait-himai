@@ -92,7 +92,7 @@ $event = array(
     'time' => '未定',
     'name' => '第53回愛工大祭 後夜祭',
     'official' => array( 'title' => '愛知工業大学大学祭', 'url' => 'http://aitech.ac.jp/~festival/' ),
-    'location' => array( 'text' => '愛知工業大学', 'url' => 'http://aitech.ac.jp/~festival/access.html' )
+    'location' => array( 'text' => '愛知工業大学', 'url' => 'http://aitech.ac.jp/~festival/Support/access.html' )
   ),
   array(
     'date' => '11月3日(日)',
@@ -106,24 +106,23 @@ $event = array(
 foreach ($event as $e): ?>
 
       <h2><?=$e['date']?> <?=$e['name']?></h2>
-			<div class="form-horizontal">
-				<div class="control-group">
-					<label class="control-label">公式サイト</label>
-					<div class="controls">
+      <div class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label">公式サイト</label>
+          <div class="controls">
             <a href="<?=$e['official']['url']?>" target="_blank"><?=$e['official']['title']?></a>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label"><i class="icon-map-marker icon-white"></i>場所</label>
-					<div class="controls">
-				    <?=$e['location']['text']?>
-            (<a href="<?=$e['location']['url']?>" target="_blank">アクセス</a>)
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label"><i class="icon-time icon-white"></i>時間</label>
-					<div class="controls"><?=$e['time']?></div>
-				</div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"><i class="icon-map-marker icon-white"></i>場所</label>
+          <div class="controls">
+            <?=$e['location']['text']?>(<a href="<?=$e['location']['url']?>" target="_blank">アクセス</a>)
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"><i class="icon-time icon-white"></i>時間</label>
+          <div class="controls"><?=$e['time']?></div>
+        </div>
       </div>
 
 <?php endforeach; ?>
