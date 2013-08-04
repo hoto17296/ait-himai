@@ -78,128 +78,55 @@
 		
     <div class="box" id="event">
 			<h1>出演予定</h1>
-			<h2>9月28日(土) なやばし夜イチ</h2>
+<?php
+$event = array(
+  array(
+    'date' => '9月28日(土)',
+    'time' => '未定',
+    'name' => 'なやばし夜イチ',
+    'official' => array( 'title' => 'なやばし夜イチ 公式ブログ', 'url' => 'http://natsu1yoichi.blog133.fc2.com/' ),
+    'location' => array( 'text' => '名古屋の真ん中を流れる堀川の西側遊歩道', 'url' => 'http://natsu1yoichi.blog133.fc2.com/blog-entry-151.html' )
+  ),
+  array(
+    'date' => '10月13日(日)',
+    'time' => '未定',
+    'name' => '第53回愛工大祭 後夜祭',
+    'official' => array( 'title' => '愛知工業大学大学祭', 'url' => 'http://aitech.ac.jp/~festival/' ),
+    'location' => array( 'text' => '愛知工業大学', 'url' => 'http://aitech.ac.jp/~festival/access.html' )
+  ),
+  array(
+    'date' => '11月3日(日)',
+    'time' => '未定',
+    'name' => '第38回淑楓祭 後夜祭',
+    'official' => array( 'title' => '第38回淑楓祭 星が丘キャンパス', 'url' => 'http://shukufuweb38.wix.com/shukutoku' ),
+    'location' => array( 'text' => '愛知淑徳大学 星が丘キャンパス', 'url' => 'http://shukufuweb38.wix.com/shukutoku#!access/cjwh' )
+  )
+);
+
+foreach ($event as $e): ?>
+
+      <h2><?=$e['date']?> <?=$e['name']?></h2>
 			<div class="form-horizontal">
 				<div class="control-group">
-					<label class="control-label">
-						公式サイト
-					</label>
+					<label class="control-label">公式サイト</label>
 					<div class="controls">
-						<a href="http://natsu1yoichi.blog133.fc2.com/" target="_blank">なやばし夜イチ 公式ブログ</a>
+            <a href="<?=$e['official']['url']?>" target="_blank"><?=$e['official']['title']?></a>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-map-marker icon-white"></i>
-						場所
-					</label>
+					<label class="control-label"><i class="icon-map-marker icon-white"></i>場所</label>
 					<div class="controls">
-						名古屋の真ん中を流れる堀川の西側遊歩道
-						(<a href="http://natsu1yoichi.blog133.fc2.com/blog-entry-151.html" target="_blank">アクセス</a>)
+				    <?=$e['location']['text']?>
+            (<a href="<?=$e['location']['url']?>" target="_blank">アクセス</a>)
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-time icon-white"></i>
-						時間
-					</label>
-					<div class="controls">
-            未定
-					</div>
-				</div>
-			</div>
-			<h2>10月13日(日) 第53回愛工大祭 後夜祭</h2>
-			<div class="form-horizontal">
-				<div class="control-group">
-					<label class="control-label">
-						公式サイト
-					</label>
-					<div class="controls">
-						<a href="http://aitech.ac.jp/~festival/" target="_blank">愛知工業大学大学祭</a>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-map-marker icon-white"></i>
-						場所
-					</label>
-					<div class="controls">
-						愛知工業大学
-						(<a href="http://aitech.ac.jp/~festival/access.html" target="_blank">アクセス</a>)
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-time icon-white"></i>
-						時間
-					</label>
-					<div class="controls">
-            未定
-					</div>
-				</div>
-			</div>
-			<h2>11月3日(日) 第38回淑楓祭 後夜祭</h2>
-			<div class="form-horizontal">
-				<div class="control-group">
-					<label class="control-label">
-						公式サイト
-					</label>
-					<div class="controls">
-						<a href="http://shukufuweb38.wix.com/shukutoku" target="_blank">第38回淑楓祭 星が丘キャンパス</a>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-map-marker icon-white"></i>
-						場所
-					</label>
-					<div class="controls">
-						愛知淑徳大学 星が丘キャンパス
-						(<a href="http://shukufuweb38.wix.com/shukutoku#!access/cjwh" target="_blank">アクセス</a>)
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-time icon-white"></i>
-						時間
-					</label>
-					<div class="controls">
-            未定
-					</div>
+					<label class="control-label"><i class="icon-time icon-white"></i>時間</label>
+					<div class="controls"><?=$e['time']?></div>
 				</div>
       </div>
-      <!--
-			<h2>11月9日(土),10日(日) AGESTOCK 2013</h2>
-			<div class="form-horizontal">
-				<div class="control-group">
-					<label class="control-label">
-						公式サイト
-					</label>
-					<div class="controls">
-						<a href="http://www.agestock.jp/" target="_blank">AGESTOCK WEB</a>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-map-marker icon-white"></i>
-						場所
-					</label>
-					<div class="controls">
-						舞浜アンフィシアター
-						(<a href="http://www.maihama-amphitheater.jp/access/" target="_blank">アクセス</a>)
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">
-						<i class="icon-time icon-white"></i>
-						時間
-					</label>
-					<div class="controls">
-						未定
-					</div>
-				</div>
-			</div>
-      -->
+
+<?php endforeach; ?>
 		</div>
 		
 		<p id="goTop"><a href="#top"><i class="icon-arrow-up icon-white"></i> ページトップへ</a></p>
