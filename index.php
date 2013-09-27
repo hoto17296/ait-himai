@@ -80,13 +80,13 @@
 			<h1>出演予定</h1>
 <?php
 $event = array(
-  array(
+/*  array(
     'date' => '9月28日(土)',
     'time' => '未定',
     'name' => 'なやばし夜イチ',
     'official' => array( 'title' => 'なやばし夜イチ 公式ブログ', 'url' => 'http://natsu1yoichi.blog133.fc2.com/' ),
     'location' => array( 'text' => '名古屋の真ん中を流れる堀川の西側遊歩道', 'url' => 'http://natsu1yoichi.blog133.fc2.com/blog-entry-151.html' )
-  ),
+  ),*/
   array(
     'date' => '10月13日(日)',
     'time' => '未定',
