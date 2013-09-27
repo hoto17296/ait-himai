@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 	<meta name="keywords" content="火舞,愛工火舞,愛知工業大学,パフォーマンス,愛知" />
-  <meta name="description" content="愛知工業大学火舞部のページです" />
-  <meta property="og:image" content="img/og.jpg" />
+	<meta name="description" content="愛知工業大学火舞部のページです" />
+	<meta property="og:image" content="img/og.jpg" />
 
-  <title>愛工火舞</title>
+	<title>愛工火舞</title>
 
 	<link href="img/favicon.ico" rel="shortcut icon">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
