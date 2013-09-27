@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta name="keywords" content="火舞,愛工火舞,愛知工業大学,パフォーマンス,愛知" />
 	<meta name="description" content="愛知工業大学火舞部のページです" />
-	<meta property="og:image" content="img/og.jpg" />
+	<meta property="og:image" content="http://ait-himai.com/img/og.jpg" />
 
 	<title>愛工火舞</title>
 
