@@ -1,4 +1,7 @@
 body {
   margin: 0;
   background-color: #000;
+	color: #fff;
+	font-family: serif;
+	text-shadow: 0 0 10px orange;
 }
