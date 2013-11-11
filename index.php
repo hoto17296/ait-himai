@@ -76,11 +76,15 @@
 			<p>
 				<strong>愛知工業大学火舞部</strong>では、毎年10月初旬に開催される大学祭の後夜祭で火舞のパフォーマンスを行なっています。
 			</p>
-			<iframe width="640" height="480" src="http://www.youtube.com/embed/ZicTY_TPJQk?rel=0" frameborder="0" allowfullscreen></iframe>
+      <video poster="img/ait2013_poster.jpg" width="100%" controls>
+        <source src="https://s3-ap-northeast-1.amazonaws.com/ait-himai.movie/ait2013_sd.webm" type='video/webm' />
+        <source src="https://s3-ap-northeast-1.amazonaws.com/ait-himai.movie/ait2013_sd.mp4" type='video/mp4' />
+      </video>
 		</div>
 		
     <div class="box" id="event">
-			<h1>出演予定</h1>
+      <h1>出演予定</h1>
+      <p><b>2013年の出演イベントはすべて終了しました。</b><br/>たくさんの方々のご来場ありがとうございました。</p>
 <?php
 $event = array(
 /*  array(
@@ -91,14 +95,14 @@ $event = array(
     'location' => array( 'text' => '名古屋の真ん中を流れる堀川の西側遊歩道', 'url' => 'http://natsu1yoichi.blog133.fc2.com/blog-entry-151.html' )
   ),*/
   array(
-    'date' => '10月13日(日)',
+    'date' => '2013年10月13日(日)',
     'time' => '未定',
     'name' => '第53回愛工大祭 後夜祭',
     'official' => array( 'title' => '愛知工業大学大学祭', 'url' => 'http://aitech.ac.jp/~festival/' ),
     'location' => array( 'text' => '愛知工業大学', 'url' => 'http://aitech.ac.jp/~festival/Support/access.html' )
   ),
   array(
-    'date' => '11月3日(日)',
+    'date' => '2013年11月3日(日)',
     'time' => '未定',
     'name' => '第38回淑楓祭 後夜祭',
     'official' => array( 'title' => '第38回淑楓祭 星が丘キャンパス', 'url' => 'http://shukufuweb38.wix.com/shukutoku' ),
